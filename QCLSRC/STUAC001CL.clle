@@ -1,0 +1,7 @@
+             PGM
+
+             DCL        VAR(&PGM) TYPE(*CHAR) LEN(10) VALUE(STUAC001)
+
+             CALL       PGM(&PGM)
+
+             ENDPGM

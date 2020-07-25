@@ -1,0 +1,18 @@
+                                            UNIQUE
+ ****
+A               R STUINFORF                 TEXT('STUDENT INFORMATION')
+ ****
+A                 STUID         10S 0       COLHDG('STUDENT ID')
+A                                           EDTCDE(3)
+A                                           ALIAS(STU_ID)
+A                 STUNM         25A         COLHDG('STUDENT NAME')
+A                                           ALIAS(STU_NAME)
+A                 STUGEN         1A         COLHDG('STUDENT GENDER')
+A                                           ALIAS(STU_GEN)
+A                 STUDOB         8S 0       COLHDG('STUDENT DOB')
+A                                           EDTWRD('    -  -  ')
+A                                           ALIAS(STU_DOB)
+A                 STUCITY       15A         COLHDG('STUDENT CITY')
+A                                           ALIAS(STU_CITY)
+ ****
+A               K STUID

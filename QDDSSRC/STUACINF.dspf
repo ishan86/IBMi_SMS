@@ -1,0 +1,80 @@
+A                                           DSPSIZ(24 80 *DS3)
+                                            INDARA
+A                                           CA03(03 'EXIT')
+A                                           CF05(05 'REFRESH')
+A                                           CF06(06 'ADD')
+A                                           CA12(12 'CANCEL')
+ *
+A               R STUADD
+A                                       1 28'STUDENT ADD INFORMATION'
+A                 D_PGM         10A     1 60
+A                                       1 73DATE
+A                                           EDTCDE(Y)
+A                                       2 73TIME
+ *
+A                                       5  2'STUDENT ID'
+A                                            DSPATR(HI)
+A                 D_STUID       10  0B  5 14
+A       31                                   DSPATR(RI)
+A       31        MSG1          50A    23  2 MSGID(SEM0001 MSGINFO)
+A                                            COLOR(RED)
+A                                            DSPATR(RI)
+ *
+A                                       6  2'NAME'
+A                                            DSPATR(HI)
+A                 D_STUNM       25A  B  6 14
+A       32                                   DSPATR(RI)
+A       32        MSG2          50A    23  2 MSGID(SEM0001 MSGINFO)
+A                                            COLOR(RED)
+A                                            DSPATR(RI)
+ *
+A                                       7  2'GENDER'
+A                                            DSPATR(HI)
+A                 D_STUGEN       1A  B  7 14
+A                                            VALUES('M' 'F')
+A                                       7 19'VALID VALUE: M - MALE, F-FEMALE'
+ *
+A                                       8  2'DOB'
+A                                            DSPATR(HI)
+A                 D_STUDOB       8  0B  8 14
+A       33                                   DSPATR(RI)
+A       33        MSG4          50A    23  2 MSGID(SEM0001 MSGINFO)
+A                                            COLOR(RED)
+A                                            DSPATR(RI)
+ *
+A                                       9  2'CITY'
+A                                            DSPATR(HI)
+A                 D_STUCITY     15A  B  9 14
+A       34                                   DSPATR(RI)
+A       34        MSG5          50A    23  2 MSGID(SEM0001 MSGINFO)
+A                                            COLOR(RED)
+A                                            DSPATR(RI)
+ *
+A                                      10  2'CLASS'
+A                                            DSPATR(HI)
+A                 D_STUCLS       2A  B 10 14
+A                                            VALUES('01' '02' '03' '04' '05')
+A                                      10 19'VALID VALUE: 01 TO 05'
+A
+A                                      24  3'F3= EXIT'
+A                                           COLOR(BLU)
+A                                      24 13'F5= REFRESH'
+A                                           COLOR(BLU)
+A                                      24 25'F6= ADD'
+A                                           COLOR(BLU)
+A                                      24 33'F12=CANCEL'
+A                                           COLOR(BLU)
+ *
+A               R CNFPROMT
+A                                           WINDOW(6 30 6 40)
+A                                       1  2'ARE YOU SURE YOU WANT TO ADD A'
+A                                           DSPATR(HI)
+A                                       2  2'RECORD. PRESS (Y/N).'
+A                                           DSPATR(HI)
+A                                       4  1'PRESS ENTER...'
+A                                           DSPATR(HI)
+A                                       5  1'F12=CANCEL'
+A                                           COLOR(BLU)
+A                 D_CNFFLG       1A  I  2 23
+A                                           VALUES('Y' 'N')
+A                                           COLOR(RED)

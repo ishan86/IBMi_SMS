@@ -1,0 +1,11 @@
+                                            REF(STUINFO)
+ ****
+A               R STUCLSRF                  TEXT('STUDENT CLASS INFORMATION')
+ ****
+A
+A                 STUID     R               REFFLD(STUID STUINFO)
+A                 STUNM     R               REFFLD(STUNM STUINFO)
+A                 STUCLS         2A         COLHDG('CLASS')
+A
+ ****
+A               K STUID

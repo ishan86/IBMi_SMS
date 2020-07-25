@@ -1,0 +1,48 @@
+     A* Free Form Menu: STUMNU
+     A*%%TS  SD  20200718  101607  IIJAIN      REL-V7R4M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A                                      PRINT(*LIBL/QSYSPRT)
+     A          R STUMNU
+     A*%%TS  SD  20200718  101607  IIJAIN      REL-V7R4M0  5770-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A                                  1  2'STUMNU'
+     A                                      COLOR(BLU)
+     A                                  1 33'STUMNU Menu'
+     A                                      DSPATR(HI)
+     A                                  3  2'Select one of the following:'
+     A                                      COLOR(BLU)
+     A                                  5  7'1.'
+     A                                  6  7'2.'
+     A                                  7  7'3.'
+     A                                  8  7'4.'
+     A                                  9  7'5.'
+     A                                 10  7'6.'
+     A                                 11  7'7.'
+     A                                 12  7'8.'
+     A                                 13  7'9.'
+     A                                 14  6'10.'
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  5 10'Student'
+     A                                  5 18'Add'
+     A                                  5 22'Record'
+     A                                 14 10'Sign'
+     A                                 14 15'Off'
+     A                                  6 10'Student'
+     A                                  6 18'Detail'
+     A                                  6 25'Information'
+     A                                  7 10'WRKACTJOB'
+     A                                  8 10'WRKMBRPDM'
